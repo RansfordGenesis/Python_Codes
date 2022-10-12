@@ -1,0 +1,24 @@
+#Maths Fraction Hack Algorithm - www.101computing.net/maths-fraction-hack-algorithm/
+
+a = int(input("Enter the numerator of the first fraction:"))
+b = int(input("Enter the denominator of the first fraction:"))
+print("First Fraction: " + str(a) + "/" + str(b))
+
+# 1 - Complete the code here to enter the second fraction
+c = int(input("Enter the numerator of the second fraction:"))
+d = int(input("Enter the denominator of the second fraction:"))
+print("Second Fraction: " + str(a) + "/" + str(b))
+
+
+# 2 - Complete the code here to calculate and compare the cross-products. Output which fraction is bigger
+cross1 = a*d
+cross2 = b*c
+if cross1 > cross2:
+    print(str(a)+"/"+str(b)+">"+str(c)+"/"+str(d))
+else:
+    print(str(a) + "/" + str(b) + "<" + str(c) + "/" + str(d))
+
+
+# 3 - Complete the code here to output the decimal value of both fractions
+print("Decimal value of first fraction is:"+str(a/b))
+print("Decimal value of second fraction is:"+str(c/d))
