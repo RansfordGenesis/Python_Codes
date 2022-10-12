@@ -1,0 +1,6 @@
+a = "chips"
+b = "fish"
+c = a
+a = b
+b = c
+print(a + " and " + b)
