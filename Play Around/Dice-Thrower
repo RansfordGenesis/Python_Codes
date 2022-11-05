@@ -1,0 +1,24 @@
+import random
+def dice_thrower(throws, no_of_dice, dice_sides):
+    # set the size of the sample output of the dice
+    # if the dice is 7 sided, you should have 1...7 values
+    # in the sample space
+    dice_sample_space = list(range(1, dice_sides + 1))
+
+    sample_data = []
+    for i in range(1, throws+1):
+        if no_of_dice == 1:
+            # first value of the tuple refers to the throw
+            # second value refers to the random output
+            throw = (i, random.choice(dice_sample_space))
+            sample_data.append(throw)
+        else:
+            for _ in range(no_of_dice):
+                # first value of the tuple refers to the throw
+                # second value refers to the random output
+                # but there are going to be multiple throws if throw is ge than 1
+                throw = (i, random.choice(dice_sample_space))
+                sample_data.append(throw)
+
+
+    return sample_data
