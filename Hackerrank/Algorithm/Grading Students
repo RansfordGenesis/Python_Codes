@@ -1,0 +1,12 @@
+def gradingStudents(grades):
+    def new(grade):
+        n = int(grade/5)+1
+        if grade >= 38:
+            if (5*n)-grade < 3:
+                return 5*n
+            else:
+                return grade 
+        else:
+            return grade
+    result = [new(grade) for grade in grades]
+    return result
