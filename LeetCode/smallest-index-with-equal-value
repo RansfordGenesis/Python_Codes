@@ -6,3 +6,4 @@ class Solution:
                 break
         else:
             return -1
+
